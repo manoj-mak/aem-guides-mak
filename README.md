@@ -1,6 +1,6 @@
-# Sample AEM project template
+# Sample AEM project to test ADOBE COMPONENT GENERATOR TOOL
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This is a project to test the usage of adobe's component generator to build custom components for AEM-based applications.
 
 ## Modules
 
