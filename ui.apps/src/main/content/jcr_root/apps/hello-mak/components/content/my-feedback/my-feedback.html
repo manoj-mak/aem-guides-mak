@@ -1,0 +1,29 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.myFeedbackModel="com.adobe.aem.guides.mak.core.models.MyFeedback"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${myFeedbackModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${myFeedbackModel.sharedTextfieldTest}</p>
+    <p>Rating: ${myFeedbackModel.rating}</p>
+    <p>No Of Reviews: ${myFeedbackModel.noOfReviews}</p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

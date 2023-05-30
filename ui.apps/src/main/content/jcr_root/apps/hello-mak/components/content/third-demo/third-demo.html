@@ -1,0 +1,47 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.thirdDemoModel="com.adobe.aem.guides.mak.core.models.ThirdDemo"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${thirdDemoModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${thirdDemoModel.sharedTextfieldTest}</p>
+    <p>Textfield Test: ${thirdDemoModel.textfieldTest}</p>
+    <p>Checkbox Test: ${thirdDemoModel.checkTest ? 'checked' : 'unchecked'}</p>
+    <p>Pathfield Test: ${thirdDemoModel.pathfieldTest}</p>
+    <p>Pagefield Test: ${thirdDemoModel.pagefieldTest}</p>
+    <div data-sly-list="${thirdDemoModel.tagfieldTest}">
+        <p>Tags Test: ${item}</p>
+    </div>
+    <p>Textarea Test: ${thirdDemoModel.textareaTest}</p>
+    <p>Select Date: ${thirdDemoModel.dateTest.time.toGMTString}</p>
+    <p>Select Test: ${thirdDemoModel.selectTest}</p>
+    <p>Radio Test: ${thirdDemoModel.radioTest}</p>
+    <p>Hidden Field (hiddenTest): ${thirdDemoModel.hiddenTest}</p>
+    <p>Numberfield Test: ${thirdDemoModel.numberfieldTest}</p>
+    <p>Image Test: <img src="${thirdDemoModel.imageTest.src}"/></p>
+    <div data-sly-list="${thirdDemoModel.colors}">
+        <p>Colors: ${item}</p>
+    </div>
+    <div data-sly-list="${thirdDemoModel.links}">
+        <p>Path: ${item.path} | Label: ${item.label} | Link Icon: ${item.linkIcon.src}</p>
+    </div>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

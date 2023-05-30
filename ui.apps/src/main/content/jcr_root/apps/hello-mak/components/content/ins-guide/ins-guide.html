@@ -1,0 +1,45 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.insGuideModel="com.adobe.aem.guides.mak.core.models.InsGuide"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${insGuideModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${insGuideModel.sharedTextfieldTest}</p>
+    <p>Image 1: <img src="${insGuideModel.image1.src}"/></p>
+    <p>Image 2: <img src="${insGuideModel.image2.src}"/></p>
+    <p>Image 3: <img src="${insGuideModel.image3.src}"/></p>
+    <p>Image 4: <img src="${insGuideModel.image4.src}"/></p>
+    <p>Image 5: <img src="${insGuideModel.image5.src}"/></p>
+    <p>Image 6: <img src="${insGuideModel.image6.src}"/></p>
+    <p>Title 1: ${insGuideModel.title1}</p>
+    <p>Title 2: ${insGuideModel.title2}</p>
+    <p>Title 3: ${insGuideModel.title3}</p>
+    <p>Title 4: ${insGuideModel.title4}</p>
+    <p>Title 5: ${insGuideModel.title5}</p>
+    <p>Title 6: ${insGuideModel.title6}</p>
+    <p>Description 1: ${insGuideModel.description1}</p>
+    <p>Description 2: ${insGuideModel.description2}</p>
+    <p>Description 3: ${insGuideModel.description3}</p>
+    <p>Description 4: ${insGuideModel.description4}</p>
+    <p>Description 5: ${insGuideModel.description5}</p>
+    <p>Description 6: ${insGuideModel.description6}</p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

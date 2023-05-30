@@ -1,0 +1,41 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.mySliderModel="com.adobe.aem.guides.mak.core.models.MySlider"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${mySliderModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${mySliderModel.sharedTextfieldTest}</p>
+    <p>Textarea Test: ${mySliderModel.textareaTest}</p>
+    <p>Textarea Test1: ${mySliderModel.textareatest1}</p>
+    <p>Textarea Test2: ${mySliderModel.textareatest2}</p>
+    <p>Textarea Test3: ${mySliderModel.textareatest3}</p>
+    <p>Textarea Test4: ${mySliderModel.textareatest4}</p>
+    <p>Textarea Test5: ${mySliderModel.textareatest5}</p>
+    <p>Textarea Test6: ${mySliderModel.textareatest6}</p>
+    <p>Image Test: <img src="${mySliderModel.imageTest.src}"/></p>
+    <p>Image Test1: <img src="${mySliderModel.imageTest1.src}"/></p>
+    <p>Image Test2: <img src="${mySliderModel.imageTest2.src}"/></p>
+    <p>Image Test3: <img src="${mySliderModel.imageTest3.src}"/></p>
+    <p>Image Test4: <img src="${mySliderModel.imageTest4.src}"/></p>
+    <p>Image Test5: <img src="${mySliderModel.imageTest5.src}"/></p>
+    <p>Image Test6: <img src="${mySliderModel.imageTest6.src}"/></p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

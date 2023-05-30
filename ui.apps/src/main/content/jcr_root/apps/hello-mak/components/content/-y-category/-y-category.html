@@ -1,0 +1,39 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.myCategoryModel="com.adobe.aem.guides.mak.core.models.MyCategory"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${myCategoryModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${myCategoryModel.sharedTextfieldTest}</p>
+    <p>Textarea Test1: ${myCategoryModel.textareatest1}</p>
+    <p>Textarea Test2: ${myCategoryModel.textareatest2}</p>
+    <p>Textarea Test3: ${myCategoryModel.textareatest3}</p>
+    <p>Textarea Test4: ${myCategoryModel.textareatest4}</p>
+    <p>Textarea Test5: ${myCategoryModel.textareatest5}</p>
+    <p>Textarea Test6: ${myCategoryModel.textareatest6}</p>
+    <p>Image Test1: <img src="${myCategoryModel.imageTest1.src}"/></p>
+    <p>Image Test2: <img src="${myCategoryModel.imageTest2.src}"/></p>
+    <p>Image Test3: <img src="${myCategoryModel.imageTest3.src}"/></p>
+    <p>Image Test4: <img src="${myCategoryModel.imageTest4.src}"/></p>
+    <p>Image Test5: <img src="${myCategoryModel.imageTest5.src}"/></p>
+    <p>Image Test6: <img src="${myCategoryModel.imageTest6.src}"/></p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

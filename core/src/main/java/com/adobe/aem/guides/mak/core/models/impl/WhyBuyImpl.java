@@ -1,0 +1,179 @@
+/*
+ * ***********************************************************************
+ * Fulcro Consulting pvt ltd CONFIDENTIAL
+ * ___________________
+ *
+ * Copyright 2023 Fulcro Consulting pvt ltd.
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+ * technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+ * and its suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Fulcro Consulting pvt ltd.
+ * ***********************************************************************
+ */
+
+package com.adobe.aem.guides.mak.core.models.impl;
+
+import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
+import com.adobe.acs.commons.models.injectors.annotation.SharedValueMapValue;
+import com.adobe.aem.guides.mak.core.models.WhyBuy;
+import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.export.json.ExporterConstants;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Exporter;
+import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
+import org.apache.sling.models.annotations.injectorspecific.SlingObject;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+
+@Model(adaptables = {
+    SlingHttpServletRequest.class
+}, adapters = {
+    WhyBuy.class,
+    ComponentExporter.class
+}, resourceType = "hello-mak/components/content/why-buy")
+@Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
+public class WhyBuyImpl
+    implements WhyBuy
+{
+
+    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String globalTextfieldTest;
+    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String sharedTextfieldTest;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon1;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon2;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon3;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon4;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon5;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon6;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon7;
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.adobe.cq.wcm.core.components.models.Image icon8;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point1;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point2;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point3;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point4;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point5;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point6;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point7;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String point8;
+    @SlingObject
+    private Resource resource;
+
+    @Override
+    public String getGlobalTextfieldTest() {
+        return globalTextfieldTest;
+    }
+
+    @Override
+    public String getSharedTextfieldTest() {
+        return sharedTextfieldTest;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon1() {
+        return icon1;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon2() {
+        return icon2;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon3() {
+        return icon3;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon4() {
+        return icon4;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon5() {
+        return icon5;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon6() {
+        return icon6;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon7() {
+        return icon7;
+    }
+
+    @Override
+    public com.adobe.cq.wcm.core.components.models.Image getIcon8() {
+        return icon8;
+    }
+
+    @Override
+    public String getPoint1() {
+        return point1;
+    }
+
+    @Override
+    public String getPoint2() {
+        return point2;
+    }
+
+    @Override
+    public String getPoint3() {
+        return point3;
+    }
+
+    @Override
+    public String getPoint4() {
+        return point4;
+    }
+
+    @Override
+    public String getPoint5() {
+        return point5;
+    }
+
+    @Override
+    public String getPoint6() {
+        return point6;
+    }
+
+    @Override
+    public String getPoint7() {
+        return point7;
+    }
+
+    @Override
+    public String getPoint8() {
+        return point8;
+    }
+
+    @Override
+    public String getExportedType() {
+        return resource.getResourceType();
+    }
+
+}

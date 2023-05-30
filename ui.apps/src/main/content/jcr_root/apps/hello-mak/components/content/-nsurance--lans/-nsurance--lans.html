@@ -1,0 +1,51 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.insurancePlansModel="com.adobe.aem.guides.mak.core.models.InsurancePlans"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${insurancePlansModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${insurancePlansModel.sharedTextfieldTest}</p>
+    <p>Plan Name 1: ${insurancePlansModel.planName1}</p>
+    <p>Plan Name 2: ${insurancePlansModel.planName2}</p>
+    <p>Plan Name 3: ${insurancePlansModel.planName3}</p>
+    <p>Plan Image 1: <img src="${insurancePlansModel.planImage1.src}"/></p>
+    <p>Plan Image 2: <img src="${insurancePlansModel.planImage2.src}"/></p>
+    <p>Plan Image 3: <img src="${insurancePlansModel.planImage3.src}"/></p>
+    <p>Plan 1 Description 1: ${insurancePlansModel.plan1Description1}</p>
+    <p>Plan 1 Description 2: ${insurancePlansModel.plan1Description2}</p>
+    <p>Plan 1 Description 3: ${insurancePlansModel.plan1Description3}</p>
+    <p>Plan 2 Description 1: ${insurancePlansModel.plan2Description1}</p>
+    <p>Plan 2 Description 2: ${insurancePlansModel.plan2Description2}</p>
+    <p>Plan 2 Description 3: ${insurancePlansModel.plan2Description3}</p>
+    <p>Plan 3 Description 1: ${insurancePlansModel.plan3Description1}</p>
+    <p>Plan 3 Description 2: ${insurancePlansModel.plan3Description2}</p>
+    <p>Plan 3 Description 3: ${insurancePlansModel.plan3Description3}</p>
+    <p>Title Image 1: <img src="${insurancePlansModel.titleImage1.src}"/></p>
+    <p>Title Image 2: <img src="${insurancePlansModel.titleImage2.src}"/></p>
+    <p>Title Image 3: <img src="${insurancePlansModel.titleImage3.src}"/></p>
+    <p>Title Text 1: ${insurancePlansModel.titleText1}</p>
+    <p>Title Text 2: ${insurancePlansModel.titleText2}</p>
+    <p>Title Text 3: ${insurancePlansModel.titleText3}</p>
+    <p>Subtitle Text 1: ${insurancePlansModel.subtitleText1}</p>
+    <p>Subtitle Text 2: ${insurancePlansModel.subtitleText2}</p>
+    <p>Subtitle Text 3: ${insurancePlansModel.subtitleText3}</p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

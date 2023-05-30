@@ -1,0 +1,285 @@
+{
+    "project-settings": {
+        "code-owner": "Fulcro Consulting pvt ltd",
+        "bundle-path": "core/src/main/java",
+        "test-path": "core/src/test/java",
+        "apps-path": "ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "hello-mak/components",
+        "model-interface-pkg": "com.adobe.aem.guides.mak.core.models",
+        "model-impl-pkg": "com.adobe.aem.guides.mak.core.models.impl"
+    },
+    "name": "my-download",
+    "title": "My Download Component",
+    "group": "Hello Mak - Content",
+    "type": "content",
+    "options": {
+        "js": true,
+        "jstxt": true,
+        "css": true,
+        "csstxt": true,
+        "html": true,
+        "html-content": true,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+            "request"
+        ],
+        "generic-javadoc": false,
+        "properties-tabs": [
+            {
+                "id": "tab-1",
+                "label": "Tab 1",
+                "fields": [
+                    "icon1",
+                    "icon2",
+                    "icon3",
+                    "icon4",
+                    "icon5",
+                    "icon6",
+                    "icon7",
+                    "icon8"
+
+                    
+                    
+
+
+                    
+                
+                ]
+            },
+            {
+                "id": "tab-2",
+                "label": "Tab 2",
+                "fields": [
+                    "source1",
+                    "source2",
+                    "source3",
+                    "source4",
+                    "source5",
+                    "source6",
+                    "source7",
+                    "source8"
+
+                ]
+            
+
+            }
+           
+           
+        ],
+        "properties-shared-tabs" : [
+            {
+                "id": "tab-shared",
+                "label": "Tab Shared",
+                "fields": ["sharedTextfieldTest"]
+            }
+        ],
+        "properties-global-tabs" : [
+            {
+                "id": "tab-global",
+                "label": "Tab Global",
+                "fields": ["globalTextfieldTest"]
+            }
+        ],
+        "properties": [
+           
+           
+
+           
+            {
+                "field": "title1",
+                "type": "textfield",
+                "label": "Title 1",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "title2",
+                "type": "textfield",
+                "label": "Title 2",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "title3",
+                "type": "textfield",
+                "label": "Title 3",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "description1",
+                "type": "textfield",
+                "label": "Description 1",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "description2",
+                "type": "textfield",
+                "label": "Description 2",
+                "json-expose": true,
+                "attributes": {}
+                
+            },{
+                "field": "description3",
+                "type": "textfield",
+                "label": "Description 3",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "icon1",
+                "type": "image",
+                "label": "Icon 1",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon2",
+                "type": "image",
+                "label": "Icon 2",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon3",
+                "type": "image",
+                "label": "Icon 3",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon4",
+                "type": "image",
+                "label": "Icon 4",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon5",
+                "type": "image",
+                "label": "Icon 5",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon6",
+                "type": "image",
+                "label": "Icon 6",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon7",
+                "type": "image",
+                "label": "Icon 7",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "icon8",
+                "type": "image",
+                "label": "Icon 8",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "source1",
+                "type": "textfield",
+                "label": "Source 1",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source2",
+                "type": "textfield",
+                "label": "Source 2",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source3",
+                "type": "textfield",
+                "label": "Source 3",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source4",
+                "type": "textfield",
+                "label": "Source 4",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source5",
+                "type": "textfield",
+                "label": "Source 5",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source6",
+                "type": "textfield",
+                "label": "Source 6",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source7",
+                "type": "textfield",
+                "label": "Source 7",
+                "json-expose": true,
+                "attributes": {}
+                
+            },
+            {
+                "field": "source8",
+                "type": "textfield",
+                "label": "Source 8",
+                "json-expose": true,
+                "attributes": {}
+                
+            }
+            
+            
+           
+           
+           
+
+
+
+            
+        ],
+        "properties-shared": [
+            {
+                "field": "sharedTextfieldTest",
+                "type": "textfield",
+                "label": "Shared Textfield Test",
+                "json-expose": true
+            }
+        ],
+        "properties-global": [
+            {
+                "field": "globalTextfieldTest",
+                "type": "textfield",
+                "label": "Global Textfield Test",
+                "json-expose": true
+            }
+        ]
+    }
+}

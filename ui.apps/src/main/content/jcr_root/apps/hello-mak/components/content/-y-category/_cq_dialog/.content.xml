@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  Fulcro Consulting pvt ltd CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2023 Fulcro Consulting pvt ltd
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from Fulcro Consulting pvt ltd.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="My Category Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured"
+               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <items jcr:primaryType="nt:unstructured">
+               <tab-1 jcr:primaryType="nt:unstructured"
+                      jcr:title="Tab 1"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <textareatest1 cq-msm-lockable="./textareatest1"
+                                          fieldLabel="Textarea Test1"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest1"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <textareatest2 cq-msm-lockable="./textareatest2"
+                                          fieldLabel="Textarea Test2"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest2"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <textareatest3 cq-msm-lockable="./textareatest3"
+                                          fieldLabel="Textarea Test3"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest3"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <textareatest4 cq-msm-lockable="./textareatest4"
+                                          fieldLabel="Textarea Test4"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest4"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <textareatest5 cq-msm-lockable="./textareatest5"
+                                          fieldLabel="Textarea Test5"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest5"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                           <textareatest6 cq-msm-lockable="./textareatest6"
+                                          fieldLabel="Textarea Test6"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textareatest6"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                        </items>
+                     </column>
+                  </items>
+               </tab-1>
+               <tab-2 jcr:primaryType="nt:unstructured"
+                      jcr:title="Tab 2"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <imageTest1ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest1/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest1 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest1/file"
+                                       fieldLabel="Image Test1"
+                                       fileNameParameter="./imageTest1/fileName"
+                                       fileReferenceParameter="./imageTest1/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest1/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                           <imageTest2ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest2/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest2 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest2/file"
+                                       fieldLabel="Image Test2"
+                                       fileNameParameter="./imageTest2/fileName"
+                                       fileReferenceParameter="./imageTest2/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest2/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                           <imageTest3ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest3/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest3 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest3/file"
+                                       fieldLabel="Image Test3"
+                                       fileNameParameter="./imageTest3/fileName"
+                                       fileReferenceParameter="./imageTest3/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest3/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                           <imageTest4ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest4/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest4 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest4/file"
+                                       fieldLabel="Image Test4"
+                                       fileNameParameter="./imageTest4/fileName"
+                                       fileReferenceParameter="./imageTest4/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest4/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                           <imageTest5ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest5/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest5 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest5/file"
+                                       fieldLabel="Image Test5"
+                                       fileNameParameter="./imageTest5/fileName"
+                                       fileReferenceParameter="./imageTest5/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest5/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                           <imageTest6ResType jcr:primaryType="nt:unstructured"
+                                              name="./imageTest6/sling:resourceType"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              value="core/wcm/components/image/v2/image"/>
+                           <imageTest6 allowUpload="{Boolean}false"
+                                       autoStart="{Boolean}false"
+                                       class="cq-droptarget"
+                                       cq-msm-lockable="./imageTest6/file"
+                                       fieldLabel="Image Test6"
+                                       fileNameParameter="./imageTest6/fileName"
+                                       fileReferenceParameter="./imageTest6/fileReference"
+                                       jcr:primaryType="nt:unstructured"
+                                       mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                       multiple="{Boolean}false"
+                                       name="./imageTest6/file"
+                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                       title="Drag to select image"
+                                       uploadUrl="${suffix.path}"
+                                       useHTML5="{Boolean}true"/>
+                        </items>
+                     </column>
+                  </items>
+               </tab-2>
+            </items>
+         </tabs>
+      </items>
+   </content>
+</jcr:root>

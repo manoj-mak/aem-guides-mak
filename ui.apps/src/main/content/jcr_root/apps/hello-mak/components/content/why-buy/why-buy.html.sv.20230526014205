@@ -1,0 +1,49 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.whyBuyModel="com.adobe.aem.guides.mak.core.models.WhyBuy"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${whyBuyModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${whyBuyModel.sharedTextfieldTest}</p>
+    <p>Title 1: ${whyBuyModel.title1}</p>
+    <p>Title 2: ${whyBuyModel.title2}</p>
+    <p>Title 3: ${whyBuyModel.title3}</p>
+    <p>Description 1: ${whyBuyModel.description1}</p>
+    <p>Description 2: ${whyBuyModel.description2}</p>
+    <p>Description 3: ${whyBuyModel.description3}</p>
+    <p>Icon 1: <img src="${whyBuyModel.icon1.src}"/></p>
+    <p>Icon 2: <img src="${whyBuyModel.icon2.src}"/></p>
+    <p>Icon 3: <img src="${whyBuyModel.icon3.src}"/></p>
+    <p>Icon 4: <img src="${whyBuyModel.icon4.src}"/></p>
+    <p>Icon 5: <img src="${whyBuyModel.icon5.src}"/></p>
+    <p>Icon 6: <img src="${whyBuyModel.icon6.src}"/></p>
+    <p>Icon 7: <img src="${whyBuyModel.icon7.src}"/></p>
+    <p>Icon 8: <img src="${whyBuyModel.icon8.src}"/></p>
+    <p>Point 1: ${whyBuyModel.point1}</p>
+    <p>Point 2: ${whyBuyModel.point2}</p>
+    <p>Point 3: ${whyBuyModel.point3}</p>
+    <p>Point 4: ${whyBuyModel.point4}</p>
+    <p>Point 5: ${whyBuyModel.point5}</p>
+    <p>Point 6: ${whyBuyModel.point6}</p>
+    <p>Point 7: ${whyBuyModel.point7}</p>
+    <p>Point 8: ${whyBuyModel.point8}</p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

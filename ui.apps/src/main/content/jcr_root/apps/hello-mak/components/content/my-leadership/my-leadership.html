@@ -1,0 +1,51 @@
+<!--/*
+*  ***********************************************************************
+*  Fulcro Consulting pvt ltd CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2023 Fulcro Consulting pvt ltd
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Fulcro Consulting pvt ltd and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Fulcro Consulting pvt ltd
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Fulcro Consulting pvt ltd.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.myLeadershipModel="com.adobe.aem.guides.mak.core.models.MyLeadership"
+     data-sly-test.configured="${false}">
+    <p>Global Textfield Test: ${myLeadershipModel.globalTextfieldTest}</p>
+    <p>Shared Textfield Test: ${myLeadershipModel.sharedTextfieldTest}</p>
+    <p>Profile 1: <img src="${myLeadershipModel.profile1.src}"/></p>
+    <p>Profile 2: <img src="${myLeadershipModel.profile2.src}"/></p>
+    <p>Profile 3: <img src="${myLeadershipModel.profile3.src}"/></p>
+    <p>Profile 4: <img src="${myLeadershipModel.profile4.src}"/></p>
+    <p>Profile 5: <img src="${myLeadershipModel.profile5.src}"/></p>
+    <p>Profile 6: <img src="${myLeadershipModel.profile6.src}"/></p>
+    <p>Name 1: ${myLeadershipModel.name1}</p>
+    <p>Name 2: ${myLeadershipModel.name2}</p>
+    <p>Name 3: ${myLeadershipModel.name3}</p>
+    <p>Name 4: ${myLeadershipModel.name4}</p>
+    <p>Name 5: ${myLeadershipModel.name5}</p>
+    <p>Name 6: ${myLeadershipModel.name6}</p>
+    <p>Designation 1: ${myLeadershipModel.designation1}</p>
+    <p>Designation 2: ${myLeadershipModel.designation2}</p>
+    <p>Designation 3: ${myLeadershipModel.designation3}</p>
+    <p>Designation 4: ${myLeadershipModel.designation4}</p>
+    <p>Designation 5: ${myLeadershipModel.designation5}</p>
+    <p>Designation 6: ${myLeadershipModel.designation6}</p>
+    <p>Description 1: ${myLeadershipModel.description1}</p>
+    <p>Description 2: ${myLeadershipModel.description2}</p>
+    <p>Description 3: ${myLeadershipModel.description3}</p>
+    <p>Description 4: ${myLeadershipModel.description4}</p>
+    <p>Description 5: ${myLeadershipModel.description5}</p>
+    <p>Description 6: ${myLeadershipModel.description6}</p>
+
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />
